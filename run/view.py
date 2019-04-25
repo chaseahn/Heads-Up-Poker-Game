@@ -8,7 +8,7 @@ class Menu:
 
     def start():
         os.system('clear')
-        print(title())
+        title()
 
 
 if __name__ == "__main__":
