@@ -12,6 +12,7 @@ def run(dbname='poker.db'):
         username VARCHAR,
         pw_hash VARCHAR,
         balance INTEGER,
+        pot INTEGER,
         win VARCHAR,
         loss VARCHAR
         ); """
@@ -22,9 +23,10 @@ def run(dbname='poker.db'):
     CUR.execute("""CREATE TABLE player(
         pk INTEGER PRIMARY KEY AUTOINCREMENT,
         username VARCHAR,
-        player_id INTEGER,
+        player_id VARCHAR,
         pw_hash,
         balance INTEGER,
+        pot INTEGER,
         win VARCHAR,
         loss VARCHAR
         ); """
@@ -60,5 +62,4 @@ def run(dbname='poker.db'):
     CON.close()
 
 if __name__ == '__main__':
-    setup()
     run()
