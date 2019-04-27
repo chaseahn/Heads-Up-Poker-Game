@@ -28,19 +28,19 @@ class Deck:
     def deal(self,val):
         if val == 'player_hand':
             player_hand = [self.cards[0].show(),self.cards[2].show()]
-            print(player_hand)
+            return player_hand
         elif val == 'computer_hand':
             computer_hand = [self.cards[1].show(),self.cards[3].show()]
-            print(computer_hand)
+            return computer_hand
         elif val == 'flop':
             flop = [self.cards[5].show(),self.cards[6].show(),self.cards[7].show()]
-            print(flop)
+            return flop
         elif val == 'turn':
-            flop = [self.cards[9].show()]
-            print(flop)
+            turn = [self.cards[9].show()]
+            return turn
         elif val == 'river':
-            flop = [self.cards[11].show()]
-            print(flop)
+            river = [self.cards[11].show()]
+            return river
             
     def show(self):
         print([card.show() for card in self.cards])
