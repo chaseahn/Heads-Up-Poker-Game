@@ -44,12 +44,3 @@ class Deck:
             
     def show(self):
         print([card.show() for card in self.cards])
-
-deck = Deck()
-deck.shuffle()
-deck.show()
-deck.deal('player_hand')
-deck.deal('computer_hand')
-deck.deal('flop')
-deck.deal('turn')
-deck.deal('river')
