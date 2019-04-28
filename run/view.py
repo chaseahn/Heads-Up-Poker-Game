@@ -10,6 +10,11 @@ class Menu:
         os.system('clear')
         title()
 
+class Turn:
+
+    def call(amount):
+        pass
+
 
 if __name__ == "__main__":
     View.start()
