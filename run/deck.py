@@ -44,3 +44,6 @@ class Deck:
             
     def show(self):
         print([card.show() for card in self.cards])
+
+    def filter(self):
+        pass
